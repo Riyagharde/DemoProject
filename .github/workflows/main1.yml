@@ -30,13 +30,13 @@ jobs:
           distribution: 'temurin'
           
      - name: Build and test with Gradle
-       run: gradlew.bat build test 
+       run: C:\diffblue-project\student-management-system-springboot\gradlew.bat build test 
         
      - name: Check test results
-       run: gradlew.bat test --scan --info
+       run: C:\diffblue-project\student-management-system-springboot\gradlew.bat test --scan --info
         
      - name: Check code coverage
-       run: gradlew.bat jacocoTestReport --outputText
+       run: C:\diffblue-project\student-management-system-springboot\gradlew.bat jacocoTestReport --outputText
        if: success()
      - name: Fail if coverage is below 75%
        if: steps.check_coverage.outputs.coverage < 75
