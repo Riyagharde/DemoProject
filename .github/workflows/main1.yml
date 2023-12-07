@@ -30,7 +30,7 @@ jobs:
           distribution: 'temurin'
           
      - name: Build and test with Gradle
-       run: gradlew.bat build test jacocoTestReport
+       run: gradlew.bat build test 
         
      - name: Check test results
        run: gradlew.bat test --scan --info
